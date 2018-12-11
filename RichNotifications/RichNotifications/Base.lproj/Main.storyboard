@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="piB-bz-YL0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4mR-h3-XvN">
+            <objects>
+                <viewController id="piB-bz-YL0" customClass="ViewController" customModule="RichNotifications" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iZM-g1-PV7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84u-Rv-63c">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="XfW-oc-072"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHa-TC-zHu">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rich Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0B-Iu-cLL">
+                                        <rect key="frame" x="104" y="10" width="167.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="WgY-57-01W"/>
+                                    <constraint firstItem="x0B-Iu-cLL" firstAttribute="centerX" secondItem="eHa-TC-zHu" secondAttribute="centerX" id="WnE-QS-ymr"/>
+                                    <constraint firstItem="x0B-Iu-cLL" firstAttribute="centerY" secondItem="eHa-TC-zHu" secondAttribute="centerY" id="oiy-z6-Pow"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iEA-hj-osk">
+                                <rect key="frame" x="24" y="96" width="327" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="d4A-ho-KrD"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbd-hJ-6RG">
+                                <rect key="frame" x="40" y="184" width="295" height="56"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="HYf-q6-tou"/>
+                                </constraints>
+                                <state key="normal" title="SEND TEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickSendNotification:" destination="piB-bz-YL0" eventType="touchUpInside" id="gYA-Gn-U5y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6S-5N-QXN">
+                                <rect key="frame" x="40" y="256" width="295" height="56"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="YBV-wg-fxq"/>
+                                </constraints>
+                                <state key="normal" title="SEND TEXT AND IMAGE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickSendNotification:" destination="piB-bz-YL0" eventType="touchUpInside" id="niX-Y7-NKg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hr-Fk-1uQ">
+                                <rect key="frame" x="40" y="400" width="295" height="56"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="oCY-5X-6g5"/>
+                                </constraints>
+                                <state key="normal" title="REMOVE NOTIFICATION">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickRemoveNotification:" destination="piB-bz-YL0" eventType="touchUpInside" id="7VT-QS-cT5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWx-g5-low">
+                                <rect key="frame" x="40" y="328" width="295" height="56"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="hMi-oY-fY8"/>
+                                </constraints>
+                                <state key="normal" title="SEND TEXT AND VIDEO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickSendNotification:" destination="piB-bz-YL0" eventType="touchUpInside" id="nWj-R9-FiY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iEA-hj-osk" firstAttribute="top" secondItem="eHa-TC-zHu" secondAttribute="bottom" constant="32" id="3A4-xz-kZ4"/>
+                            <constraint firstItem="84u-Rv-63c" firstAttribute="leading" secondItem="KRg-0k-NL5" secondAttribute="leading" id="5hP-Vj-oXr"/>
+                            <constraint firstItem="eHa-TC-zHu" firstAttribute="top" secondItem="84u-Rv-63c" secondAttribute="bottom" id="6E9-Sr-4oq"/>
+                            <constraint firstItem="xWx-g5-low" firstAttribute="trailing" secondItem="x6S-5N-QXN" secondAttribute="trailing" id="9Qq-QH-Wbi"/>
+                            <constraint firstItem="iEA-hj-osk" firstAttribute="leading" secondItem="KRg-0k-NL5" secondAttribute="leading" constant="24" id="DA7-pV-jjU"/>
+                            <constraint firstItem="x6S-5N-QXN" firstAttribute="top" secondItem="mbd-hJ-6RG" secondAttribute="bottom" constant="16" id="Dcz-G2-GgI"/>
+                            <constraint firstItem="mbd-hJ-6RG" firstAttribute="leading" secondItem="4hr-Fk-1uQ" secondAttribute="leading" id="FRP-B9-8nc"/>
+                            <constraint firstItem="mbd-hJ-6RG" firstAttribute="top" secondItem="iEA-hj-osk" secondAttribute="bottom" constant="32" id="HLY-8Q-kzJ"/>
+                            <constraint firstItem="4hr-Fk-1uQ" firstAttribute="leading" secondItem="KRg-0k-NL5" secondAttribute="leading" constant="40" id="Kzx-Sk-YwV"/>
+                            <constraint firstItem="iEA-hj-osk" firstAttribute="centerX" secondItem="iZM-g1-PV7" secondAttribute="centerX" id="OJA-yJ-FdA"/>
+                            <constraint firstItem="84u-Rv-63c" firstAttribute="top" secondItem="iZM-g1-PV7" secondAttribute="top" id="QdQ-81-mUL"/>
+                            <constraint firstItem="KRg-0k-NL5" firstAttribute="trailing" secondItem="4hr-Fk-1uQ" secondAttribute="trailing" constant="40" id="V0T-gZ-iQt"/>
+                            <constraint firstItem="4hr-Fk-1uQ" firstAttribute="top" secondItem="xWx-g5-low" secondAttribute="bottom" constant="16" id="VUw-pU-0t0"/>
+                            <constraint firstItem="eHa-TC-zHu" firstAttribute="trailing" secondItem="84u-Rv-63c" secondAttribute="trailing" id="W12-ag-VlL"/>
+                            <constraint firstItem="xWx-g5-low" firstAttribute="leading" secondItem="x6S-5N-QXN" secondAttribute="leading" id="akm-jh-FYN"/>
+                            <constraint firstItem="xWx-g5-low" firstAttribute="top" secondItem="x6S-5N-QXN" secondAttribute="bottom" constant="16" id="gBv-Cj-DMT"/>
+                            <constraint firstItem="84u-Rv-63c" firstAttribute="trailing" secondItem="KRg-0k-NL5" secondAttribute="trailing" id="ikM-Ij-YfG"/>
+                            <constraint firstItem="x6S-5N-QXN" firstAttribute="leading" secondItem="mbd-hJ-6RG" secondAttribute="leading" id="lsr-Fa-Bz6"/>
+                            <constraint firstItem="mbd-hJ-6RG" firstAttribute="trailing" secondItem="4hr-Fk-1uQ" secondAttribute="trailing" id="m6g-fl-llZ"/>
+                            <constraint firstItem="eHa-TC-zHu" firstAttribute="leading" secondItem="84u-Rv-63c" secondAttribute="leading" id="ocB-d4-lhX"/>
+                            <constraint firstItem="KRg-0k-NL5" firstAttribute="trailing" secondItem="iEA-hj-osk" secondAttribute="trailing" constant="24" id="pVo-wO-fve"/>
+                            <constraint firstItem="x6S-5N-QXN" firstAttribute="trailing" secondItem="mbd-hJ-6RG" secondAttribute="trailing" id="qXr-Lv-tMh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KRg-0k-NL5"/>
+                    </view>
+                    <connections>
+                        <outlet property="notificationBodyField" destination="iEA-hj-osk" id="FyY-7b-9bU"/>
+                        <outlet property="removeButton" destination="4hr-Fk-1uQ" id="t87-qn-Xfx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DiC-dp-BUt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
